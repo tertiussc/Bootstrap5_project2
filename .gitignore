@@ -10,6 +10,9 @@ npm-debug.*
 *.orig.*
 web-build/
 
+#Igonre Folders
+temp/
+
 # macOS
 .DS_Store
 
