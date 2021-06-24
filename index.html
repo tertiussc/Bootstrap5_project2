@@ -24,9 +24,45 @@
     </head>
     <body>
         <!-- -------------------------------------------------
+        #   Banner
+        -------------------------------------------------- -->
+        <header class="main-header">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="header-text-holder">
+                            <h1>Lorem ipsum dolor sit amet</h1>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Modi minima atque at ad.
+                                Vitae, exercitationem. Odio obcaecati
+                                necessitatibus dolor molestiae. Eum odit
+                                cupiditate ducimus sint dolor sed ipsa dicta
+                                qui!
+                            </p>
+                        </div>
+                        <div class="subscribe-holder text-center">
+                            <a
+                                href="#"
+                                data-bs-toggle="modal"
+                                data-bs-target="#subscrib_modal"
+                                class="btn btn-info text-light bs-bold"
+                                ><strong
+                                    >Subscribe for latest updates!</strong
+                                ></a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- -------------------------------------------------
         #   Navbar
         -------------------------------------------------- -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+            id="site-nav"
+        >
             <div class="container">
                 <a class="navbar-brand" href="#"
                     ><i class="fas fa-blog"></i> My Blog</a
@@ -115,6 +151,49 @@
                 </div>
             </div>
         </nav>
+
+        <!-- -------------------------------------------------
+        #   Modal
+        -------------------------------------------------- -->
+        <div
+            class="modal fade"
+            id="subscrib_modal"
+            tabindex="-1"
+            aria-labelledby="subscrib_modal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Subscribe for newsletters
+                        </h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <input
+                                type="email"
+                                class="form-control form-control-sm mb-3"
+                                placeholder="Email"
+                            />
+                            <div class="d-grid">
+                                <input
+                                    type="submit"
+                                    class="btn btn-success btn-sm"
+                                    value="Subscribe Now"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- -------------------------------------------------
         #   Scripts
         -------------------------------------------------- -->
