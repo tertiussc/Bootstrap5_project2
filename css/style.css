@@ -5,7 +5,8 @@
     backdrop-filter: blur(10px);
 }
 /* Banner */
-.main-header {
+.main-header,
+.default-header {
     background-image: url(../img/Banner.jpg);
     background-size: cover;
     /* padding-top: 100px; */
@@ -17,6 +18,21 @@
 .header-text-holder {
     text-align: center;
     color: white;
+}
+.default-header-text-holder {
+    color: white;
+}
+.default-header-text-holder h1 {
+    font-size: 2em;
+}
+
+.default-body-content .list-group .list-group-item h3 {
+    font-size: 1.3em;
+}
+.default-body-content .list-group .list-group-item:hover {
+    color: black;
+    /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); */
+    margin-left: 1px;
 }
 
 .card:hover {
